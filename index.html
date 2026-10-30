@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLACE · Equidade Social — Moradia digna, saneamento e equidade social</title>
+  <meta name="description" content="Moradia digna, saneamento e equidade social — o território como definidor de vida. Dados sobre déficit habitacional, racismo ambiental, desigualdade do tempo e estigma territorial no Brasil.">
+  <meta property="og:title" content="PLACE · Equidade Social">
+  <meta property="og:description" content="O território como definidor de vida.">
+  <meta property="og:image" content="assets/logo.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/casa.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="topbar" id="topo">
+    <div class="topbar__inner">
+      <a href="#inicio" class="brand" aria-label="PLACE Equidade Social — início">
+        <img src="assets/casa.jpg" alt="" class="brand__icon">
+        <span class="brand__text">
+          <span class="brand__name">PLACE</span>
+          <span class="brand__tag">Equidade Social</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Seções">
+        <a href="#contexto">Contexto</a>
+        <a href="#racismo">Racismo ambiental</a>
+        <a href="#tempo">O tempo</a>
+        <a href="#preconceito">Pertencimento</a>
+        <a href="#reflexao">Reflexão</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="search-trigger" id="searchOpen" type="button" aria-label="Pesquisar no conteúdo">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="search-trigger__label">Pesquisar</span>
+          <kbd class="search-trigger__kbd">/</kbd>
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <img src="assets/logo.jpg" alt="Logo PLACE Equidade Social" class="hero__mark">
+          <p class="eyebrow">Apresentação · PLACE Equidade Social</p>
+          <h1 class="hero__title searchable" data-section="Início">
+            Moradia digna, saneamento e equidade social
+          </h1>
+          <p class="hero__subtitle searchable" data-section="Início"><em>— o território como definidor de vida</em></p>
+          <div class="hero__cta">
+            <a href="#contexto" class="btn btn--solid">Começar a leitura</a>
+            <button type="button" class="btn btn--ghost" data-open-search>Pesquisar um tema</button>
+          </div>
+        </div>
+        <figure class="lawyer" id="lawyer">
+          <div class="lawyer__bubble" aria-live="polite">
+            <p class="lawyer__tip" id="lawyerTip">Olá! Eu sou o Dr. Place e vou te acompanhar nesta leitura.</p>
+            <span class="lawyer__hint" id="lawyerHint">Clique em mim para uma dica</span>
+          </div>
+          <button type="button" class="lawyer__btn" id="lawyerBtn" aria-label="Advogado animado — mostrar próxima dica">
+            <svg class="lawyer__svg" viewBox="0 78 300 262" aria-hidden="true">
+              <ellipse cx="150" cy="334" rx="96" ry="5" fill="#7a4510" opacity=".08"/>
+
+              <!-- Corpo -->
+              <g class="lawyer__body">
+                <rect x="134" y="215" width="32" height="44" rx="6" fill="#f2d6b8" stroke="#7a4510" stroke-width="3"/>
+                <path d="M50 340 C54 290 80 262 118 252 L182 252 C220 262 246 290 250 340 Z" fill="#7a4510"/>
+                <path d="M126 252 L150 302 L174 252 Z" fill="#fff" stroke="#7a4510" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M144 262 L156 262 L153 271 L160 302 L150 314 L140 302 L147 271 Z" fill="#3a220c"/>
+                <path d="M118 252 L150 314 L132 340" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2.5"/>
+                <path d="M182 252 L150 314 L168 340" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2.5"/>
+                <!-- broche da balança da justiça -->
+                <g transform="translate(206 292)" stroke="#e9c98f" stroke-width="2" fill="none" stroke-linecap="round">
+                  <path d="M0 -9 V9 M-6 9 H6 M-9 -5 H9"/>
+                  <path d="M-9 -5 L-12 2 H-6 Z M9 -5 L6 2 H12 Z" fill="#e9c98f"/>
+                </g>
+              </g>
+
+              <!-- Mãos apoiadas nos botões (só no celular) -->
+              <g class="lawyer__hands">
+                <g class="lawyer__hand lawyer__hand--l">
+                  <path d="M62 294 C66 314 76 330 88 338" fill="none" stroke="#5a320a" stroke-width="27" stroke-linecap="round"/>
+                  <path d="M62 294 C66 314 76 330 88 338" fill="none" stroke="#7a4510" stroke-width="22" stroke-linecap="round"/>
+                  <ellipse cx="94" cy="343" rx="17" ry="10" fill="#f2d6b8" stroke="#7a4510" stroke-width="3"/>
+                  <path d="M93 338 v8 M100 338 v8" stroke="#7a4510" stroke-width="2" stroke-linecap="round"/>
+                </g>
+                <g class="lawyer__hand lawyer__hand--r">
+                  <path d="M238 294 C234 314 224 330 212 338" fill="none" stroke="#5a320a" stroke-width="27" stroke-linecap="round"/>
+                  <path d="M238 294 C234 314 224 330 212 338" fill="none" stroke="#7a4510" stroke-width="22" stroke-linecap="round"/>
+                  <ellipse cx="206" cy="343" rx="17" ry="10" fill="#f2d6b8" stroke="#7a4510" stroke-width="3"/>
+                  <path d="M200 338 v8 M207 338 v8" stroke="#7a4510" stroke-width="2" stroke-linecap="round"/>
+                </g>
+              </g>
+
+              <!-- Braço que acena -->
+              <g class="lawyer__arm">
+                <path d="M224 266 C242 252 254 232 260 206" fill="none" stroke="#7a4510" stroke-width="24" stroke-linecap="round"/>
+                <path d="M252 210 L270 214" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="262" cy="192" r="15" fill="#f2d6b8" stroke="#7a4510" stroke-width="3"/>
+                <path d="M254 180 v-8 M261 178 v-10 M268 180 v-8" stroke="#7a4510" stroke-width="3" stroke-linecap="round"/>
+              </g>
+
+              <!-- Cabeça (segue o cursor) -->
+              <g class="lawyer__head" id="lawyerHead">
+                <circle cx="92" cy="168" r="12" fill="#f2d6b8" stroke="#7a4510" stroke-width="3"/>
+                <circle cx="208" cy="168" r="12" fill="#f2d6b8" stroke="#7a4510" stroke-width="3"/>
+                <ellipse cx="150" cy="165" rx="58" ry="64" fill="#f2d6b8" stroke="#7a4510" stroke-width="3"/>
+                <path d="M90 162 C84 112 116 90 150 90 C188 90 218 112 210 162 C204 134 182 118 150 120 C122 120 100 132 90 162 Z" fill="#4a2a0c"/>
+                <g class="lawyer__brows" stroke="#4a2a0c" stroke-width="4" stroke-linecap="round" fill="none">
+                  <path d="M120 140 q12 -7 24 0"/>
+                  <path d="M156 140 q12 -7 24 0"/>
+                </g>
+                <circle cx="132" cy="164" r="12" fill="#fff"/>
+                <circle cx="168" cy="164" r="12" fill="#fff"/>
+                <g id="lawyerPupils">
+                  <circle cx="132" cy="164" r="5.5" fill="#2e2218"/>
+                  <circle cx="168" cy="164" r="5.5" fill="#2e2218"/>
+                  <circle cx="134" cy="162" r="1.7" fill="#fff"/>
+                  <circle cx="170" cy="162" r="1.7" fill="#fff"/>
+                </g>
+                <rect class="lawyer__lid" x="119" y="150" width="26" height="28" fill="#f2d6b8"/>
+                <rect class="lawyer__lid" x="155" y="150" width="26" height="28" fill="#f2d6b8"/>
+                <g fill="none" stroke="#7a4510" stroke-width="3" stroke-linecap="round">
+                  <circle cx="132" cy="164" r="16"/>
+                  <circle cx="168" cy="164" r="16"/>
+                  <path d="M148 162 Q150 158 152 162 M116 160 L94 156 M184 160 L206 156"/>
+                  <path d="M150 172 q-6 12 2 14" stroke-width="2.5"/>
+                </g>
+                <ellipse cx="114" cy="190" rx="8" ry="4.5" fill="#e8a080" opacity=".45"/>
+                <ellipse cx="186" cy="190" rx="8" ry="4.5" fill="#e8a080" opacity=".45"/>
+                <path class="lawyer__mouth" d="M134 196 Q150 214 166 196 Q150 202 134 196 Z" fill="#7a4510" stroke="#7a4510" stroke-width="2.5" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </button>
+        </figure>
+      </div>
+
+      <div class="container">
+        <div class="participants searchable" data-section="Participantes">
+          <span class="participants__label">Participantes</span>
+          <ul class="participants__list">
+            <li>Anna Clara Tourinho</li>
+            <li>Gabriele Nascimento</li>
+            <li>Maria Eduarda Souza Von Ah</li>
+            <li>Juliana Cerqueira</li>
+            <li>Nicole Sales</li>
+            <li>Evelyn de Jesus</li>
+            <li>Jonas Walner</li>
+            <li>Caroline Marques</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Números ===== -->
+    <section class="stats" aria-label="Números em destaque">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num">5,77 mi</span><span class="stat__label">domicílios em déficit habitacional (2024)</span></div>
+        <div class="stat reveal"><span class="stat__num">62,6%</span><span class="stat__label">desses domicílios são chefiados por mulheres</span></div>
+        <div class="stat reveal"><span class="stat__num">2h47</span><span class="stat__label">por dia em deslocamento na periferia de São Paulo</span></div>
+        <div class="stat reveal"><span class="stat__num">60%</span><span class="stat__label">dos jovens já se sentiram prejudicados pelo endereço</span></div>
+      </div>
+    </section>
+
+    <!-- ===== 01 Contexto ===== -->
+    <section class="chapter" id="contexto" data-title="A temática em contexto">
+      <div class="container chapter__grid">
+        <header class="chapter__head">
+          <span class="chapter__num">01</span>
+          <h2 class="chapter__title searchable" data-section="A temática em contexto">A temática em contexto</h2>
+          <p class="chapter__lead">Déficit habitacional no Brasil</p>
+        </header>
+        <div class="chapter__body">
+          <ul class="facts">
+            <li class="fact reveal searchable" data-section="A temática em contexto">
+              <span class="fact__hl">5,77 milhões</span>
+              <p>O Brasil tinha 5,77 milhões de domicílios em déficit habitacional em 2024 — 7,4% dos domicílios ocupados, o menor patamar já registrado.</p>
+              <cite>Fundação João Pinheiro / Ministério das Cidades</cite>
+            </li>
+            <li class="fact reveal searchable" data-section="A temática em contexto">
+              <span class="fact__hl">62,6%</span>
+              <p>Mulheres chefiam 62,6% dos domicílios em déficit habitacional.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="A temática em contexto">
+              <span class="fact__hl">Maioria</span>
+              <p>Pessoas não-brancas são maioria em praticamente todos os componentes do déficit, exceto na Região Sul.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="A temática em contexto">
+              <span class="fact__hl">&gt; 30% da renda</span>
+              <p>O maior peso é o ônus excessivo com aluguel (mais de 30% da renda gasto com moradia) — mais da metade do déficit nacional.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 Racismo ambiental ===== -->
+    <section class="chapter chapter--alt" id="racismo" data-title="Racismo ambiental e estigma territorial">
+      <div class="container chapter__grid">
+        <header class="chapter__head">
+          <span class="chapter__num">02</span>
+          <h2 class="chapter__title searchable" data-section="Racismo ambiental e estigma territorial">Racismo ambiental e estigma territorial</h2>
+          <p class="chapter__lead">Preconceito ligado ao lugar</p>
+        </header>
+        <div class="chapter__body">
+          <ul class="facts">
+            <li class="fact reveal searchable" data-section="Racismo ambiental e estigma territorial">
+              <span class="fact__hl">67%</span>
+              <p>No Rio de Janeiro, 67% dos moradores de favelas são pessoas negras — acima da média nacional de pretos e pardos (55,5%).</p>
+              <cite>Instituto Locomotiva / Data Favela / Cufa</cite>
+            </li>
+            <li class="fact reveal searchable" data-section="Racismo ambiental e estigma territorial">
+              <span class="fact__hl">67,9%</span>
+              <p>No Sol Nascente (DF), maior favela do país, 67,9% dos moradores se identificam como pretos ou pardos.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="Racismo ambiental e estigma territorial">
+              <span class="fact__hl">72,6% × 27,4%</span>
+              <p>Em Niterói, o Morro do Estado tinha 72,6% de população negra contra 27,4% no centro da cidade.</p>
+            </li>
+          </ul>
+
+          <aside class="concept reveal searchable" data-section="Racismo ambiental e estigma territorial">
+            <span class="concept__label">Conceito</span>
+            <h3>Racismo ambiental</h3>
+            <p>O conceito de racismo ambiental (Robert Bullard) descreve como populações negras, periféricas e indígenas são expostas de forma desproporcional a riscos ambientais e infraestrutura precária por terem menos poder político.</p>
+          </aside>
+
+          <p class="note reveal searchable" data-section="Racismo ambiental e estigma territorial">Pesquisas apontam que institutos e a mídia historicamente tratam a favela só como <q>carência, desordem, precariedade</q>, o que reforça estigma — inclusive entre os próprios moradores.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 Tempo ===== -->
+    <section class="chapter" id="tempo" data-title="A desigualdade do tempo">
+      <div class="container chapter__grid">
+        <header class="chapter__head">
+          <span class="chapter__num">03</span>
+          <h2 class="chapter__title searchable" data-section="A desigualdade do tempo">A desigualdade do tempo</h2>
+          <p class="chapter__lead">Deslocamento, cuidado e saúde mental</p>
+        </header>
+        <div class="chapter__body">
+          <h3 class="subhead">Tempo de deslocamento</h3>
+          <ul class="facts">
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Deslocamento">
+              <span class="fact__hl">2h47 / dia</span>
+              <p>Em São Paulo, quem mora na periferia e usa transporte público gasta em média 2h47 por dia apenas se deslocando.</p>
+              <cite>Pesquisa Viver em SP 2024: Mobilidade Urbana — Rede Nossa São Paulo / Ipec</cite>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Deslocamento">
+              <span class="fact__hl">Até 4 horas</span>
+              <p>Moradores dos extremos da cidade (como Parelheiros e Itaim Paulista) relatam até 4 horas diárias dentro de transporte público — alguns saem de casa 2 horas antes do horário de trabalho só para garantir que chegam a tempo.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Deslocamento">
+              <span class="fact__hl">+26% · +76%</span>
+              <p>Na Zona Leste de São Paulo, o tempo de deslocamento é 26% maior que a média da cidade, e o índice de imobilidade de quem ganha até 2 salários mínimos é 76% superior ao da cidade como um todo.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Deslocamento">
+              <span class="fact__hl">2 milhões</span>
+              <p>Mais de 2 milhões de moradores da Grande São Paulo levam de 1 a mais de 2 horas para chegar ao trabalho; 228 mil levam mais de 2 horas.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Deslocamento">
+              <span class="fact__hl">4h ou 5h</span>
+              <p>Uma pesquisa de mapeamento mostrou que moradores mais afastados do centro precisam iniciar suas viagens em horários como 4h ou 5h da manhã num dia útil.</p>
+              <cite>CEM / USP</cite>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Deslocamento">
+              <span class="fact__hl">55% · 51%</span>
+              <p>55% das pessoas dizem que o tempo de deslocamento prejudica a qualidade de vida, e 51% relatam impacto negativo na produtividade.</p>
+              <cite>Pesquisa da CNI</cite>
+            </li>
+          </ul>
+
+          <h3 class="subhead">Impacto direto na criação dos filhos e na saúde mental</h3>
+          <ul class="facts">
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Saúde mental">
+              <p>Uma pesquisa qualitativa com mães de periferia (<q>O Teto e a Tela</q>) mostra que o cansaço extremo do dia — deslocamento + trabalho + tarefas de casa — leva mães a liberar o uso de telas para os filhos simplesmente para conseguir descansar alguns minutos.</p>
+            </li>
+          </ul>
+
+          <blockquote class="pullquote reveal searchable" data-section="A desigualdade do tempo · Saúde mental">
+            <p>“Antes de pensar se meu filho vai conhecer tecnologia, quero dormir quinze minutos.”</p>
+            <footer>Mãe de periferia — pesquisa “O Teto e a Tela”</footer>
+          </blockquote>
+
+          <ul class="facts">
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Saúde mental">
+              <p>Pesquisas sobre parentalidade mostram que o bem-estar materno diminui conforme aumentam as responsabilidades e o estresse, sendo agravado por menor renda e pior condição de moradia.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Saúde mental">
+              <p>Mulheres provedoras do lar relatam dificuldade em conciliar carga horária de trabalho, tempo de deslocamento entre casa e serviço, e falta de creches — um ciclo que se retroalimenta.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Saúde mental">
+              <span class="fact__hl">7 anos</span>
+              <p>Um estudo de coorte, que acompanhou crianças de escolas públicas de São Paulo e Porto Alegre por 7 anos, encontrou relação entre pobreza multidimensional (incluindo condições de moradia e infraestrutura) na infância e maior risco de transtornos mentais na vida adulta.</p>
+              <cite>BHRC — USP / Unifesp</cite>
+            </li>
+            <li class="fact reveal searchable" data-section="A desigualdade do tempo · Saúde mental">
+              <p>Isso cria um ciclo geracional: pouco tempo de qualidade em casa hoje afeta o desenvolvimento psicológico da criança, que carrega esse impacto para a vida adulta.</p>
+            </li>
+          </ul>
+
+          <p class="closing reveal searchable" data-section="A desigualdade do tempo">O tempo de deslocamento não é neutro — ele é tempo tirado do sono, do cuidado com os filhos, do descanso e da própria saúde mental de quem mora longe do trabalho. <strong>Quem vive na periferia não perde só quilômetros, perde horas de vida que nunca mais volta pra casa.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 04 Pertencimento ===== -->
+    <section class="chapter chapter--alt" id="preconceito" data-title="Gostar do próprio lugar">
+      <div class="container chapter__grid">
+        <header class="chapter__head">
+          <span class="chapter__num">04</span>
+          <h2 class="chapter__title searchable" data-section="Gostar do próprio lugar">Gostar do próprio lugar, mas enfrentar preconceito ao sair dele</h2>
+        </header>
+        <div class="chapter__body">
+          <ul class="facts">
+            <li class="fact reveal searchable" data-section="Gostar do próprio lugar">
+              <span class="fact__hl">49% · 75%</span>
+              <p>Pesquisa com jovens de cinco favelas do Rio (Rocinha, Cidade de Deus, entre outras): 49% preferem não revelar que moram em favela por medo de preconceito, e 75% acreditam que quem vive em favela sofre preconceito.</p>
+              <cite>Instituto Data Popular / Cufa</cite>
+            </li>
+            <li class="fact reveal searchable" data-section="Gostar do próprio lugar">
+              <span class="fact__hl">26% · 60%</span>
+              <p>Um estudo mais recente com 600 jovens de 15 a 29 anos: 26% dos jovens já mentiram sobre o bairro onde moram para tentar conseguir uma vaga de emprego; 60% já se sentiram prejudicados por causa do endereço.</p>
+              <cite>“Injustiças estruturais entre jovens na cidade de São Paulo” — Juventudes Potentes / Rede Conhecimento Social</cite>
+            </li>
+            <li class="fact reveal searchable" data-section="Gostar do próprio lugar">
+              <p>Um relato direto ilustra isso: um jovem da Maré, no Rio, contou ao UNICEF que empresas dizem <q>não faz o perfil da minha empresa</q> ao rejeitar candidatos de periferia, mesmo quando qualificados.</p>
+            </li>
+          </ul>
+
+          <blockquote class="pullquote reveal searchable" data-section="Gostar do próprio lugar">
+            <p>“Nós que moramos em comunidade e somos negros sentimos essa discriminação, tanto no tom da pele quanto na localidade que você mora. Acho que se morássemos na Zona Sul, talvez estivéssemos empregados.”</p>
+            <footer>Moradora de comunidade, em relato à Voz das Comunidades</footer>
+          </blockquote>
+
+          <ul class="facts">
+            <li class="fact reveal searchable" data-section="Gostar do próprio lugar">
+              <span class="fact__hl">3 estigmas</span>
+              <p>Um estudo acadêmico descreve que o jovem periférico carrega, ao mesmo tempo, três estigmas sobrepostos: o da idade, o da pobreza e o do local de moradia.</p>
+            </li>
+            <li class="fact reveal searchable" data-section="Gostar do próprio lugar">
+              <p>Pesquisadores também descrevem como territórios estigmatizados (e seus moradores) acabam sendo tratados como <q>bode expiatório</q> simbólico dos problemas urbanos — o que reforça o afastamento social de quem vive ali, mesmo quando a pessoa tem orgulho e afeto pelo próprio bairro.</p>
+            </li>
+          </ul>
+
+          <p class="closing reveal searchable" data-section="Gostar do próprio lugar">Dentro do próprio território, existe pertencimento, cultura, rede de apoio e identidade — muitos moradores gostam genuinamente de onde vivem. O preconceito não nasce de dentro da comunidade, nasce de fora dela, no contato com o “mundo formal” (mercado de trabalho, escola, atendimento em lojas). <strong>Isso reforça a ideia de que o problema não é o lugar em si, é o olhar que a sociedade lança sobre ele.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 05 Reflexão ===== -->
+    <section class="reflection" id="reflexao" data-title="Reflexão">
+      <div class="container reflection__inner">
+        <span class="chapter__num">05 · Reflexão</span>
+        <p class="reflection__q reveal searchable" data-section="Reflexão">“De que forma o lugar onde nascemos e moramos determina quem somos, como somos vistos, quanto tempo temos para viver a própria vida e as oportunidades que teremos ao longo dela?”</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <img src="assets/logo.jpg" alt="PLACE Equidade Social" class="footer__logo">
+      <div class="footer__text">
+        <p class="footer__title">Moradia digna, saneamento e equidade social — o território como definidor de vida</p>
+        <p class="footer__names">Anna Clara Tourinho · Gabriele Nascimento · Maria Eduarda Souza Von Ah · Juliana Cerqueira · Nicole Sales · Evelyn de Jesus · Jonas Walner · Caroline Marques</p>
+        <a href="#topo" class="footer__top">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Pesquisa ===== -->
+  <div class="search" id="search" hidden>
+    <div class="search__backdrop" data-close-search></div>
+    <div class="search__panel" role="dialog" aria-modal="true" aria-label="Pesquisar no conteúdo">
+      <div class="search__field">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="search" id="searchInput" placeholder="Pesquise por tema, dado ou lugar…" autocomplete="off" spellcheck="false" aria-controls="searchResults">
+        <button type="button" class="search__close" data-close-search aria-label="Fechar pesquisa">Esc</button>
+      </div>
+      <div class="search__suggest" id="searchSuggest">
+        <span>Sugestões:</span>
+        <button type="button">aluguel</button>
+        <button type="button">mulheres</button>
+        <button type="button">favela</button>
+        <button type="button">transporte</button>
+        <button type="button">saúde mental</button>
+        <button type="button">emprego</button>
+      </div>
+      <ul class="search__results" id="searchResults" role="listbox"></ul>
+      <p class="search__meta" id="searchMeta" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
